@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+    scroll-snap-align: start;
+}
+
+body {
+    background-color: #425664;
+    font-family: 'Poppins', sans-serif;
+    color: #f6f4f2;
+    font-size: 20px;
+    line-height: 1.6em;
+    height: 100vh;
+}
+
+body h1 {
+    color: #2D2D2D;
+}
+
+body h3 {
+    color: #2D2D2D;
+}
+
+
+/****** HEADER ******/
+/* #main-header {
+    background-color: #a3b18a;
+    color: #344e41;
+    text-align: center;
+    padding: 3em;
+} */
+
+/****** NAVBAR ******/
+#navbar {
+    background-color: #2D2D2D;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#navbar a {
+    color: #f6f4f2;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#navbar a#a1:hover {
+    color: #00AC9F;
+}
+
+#navbar a#a2:hover {
+    color: #00AC9F;
+}
+
+#navbar a#a3:hover {
+    color: #00AC9F;
+}
+
+#navbar a#a4:hover {
+    color: #00AC9F;
+}
+
+/***** SECTIONS *****/
+
+#Home {
+    /* background-color: #F3C300; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Home h1 {
+    color: #2D2D2D;
+}
+
+#Home h4 {
+    color: #f6f4f2;
+}
+
+.container {
+    width: 70%;
+}
+
+/***** About section *****/
+
+#About {
+    /* background-color: #a3b18a; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #About .container {
+    width: 1200px;
+} */
+
+#About h1 {
+    padding: 0px 0px 20px 0px;
+    text-indent: 10%;
+}
+
+#About h3 {
+    padding: 20px 0px 20px 0px;
+    text-indent: 10%;
+}
+
+#About p {
+    padding: 0px 124px 0px 124px;
+    letter-spacing: 1.7px;
+    line-height: 1.7;
+    text-align: start;
+}
+
+#About ul {
+    text-align: start;
+    padding: 20px 0px 20px 124px;
+    list-style-image: url("photos/angle-small.png");
+}
+
+
+/***** Education Section *****/
+
+#Education {
+    /* background-color: aquamarine; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/***** Projects Section *****/
+
+#Projects {
+    /* background-color: #2E6DB4; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Projects a {
+    color: #f6f4f2;
+    text-decoration: none;
+}
+
+#Projects a:hover {
+    color: aquamarine;
+}
+
+/***** Resume Section *****/
+
+#Resume {
+    background-color: #3a5a40;
+    height: 100vh;
+}
+
+/***** Breakpoints *****/
+
+@media screen and (max-width: 600px){
+    body {
+        background-color: #425664;
+        height: 150vh;
+        font-size: 16px;
+    }
+
+
+    /* navbar */
+    #navbar {padding: 20px 1px 20px 1px;}
+
+    #navbar a {font-size: 20px;}
+
+    /* sections */
+    #Home {height: 118vh;}
+
+    #About {height: 118vh;}
+
+    #About h1 {padding: 0px;}
+    
+    #About h3 {padding: 0px;}
+    
+    #About p {padding: 0px;}
+    
+    #About ul {padding: 0px;}
+
+    #Education {height: 118vh;}
+}
+
+@media screen and (min-width: 600px){
+    body {
+        background-color: #425664;
+        height: 150vh;
+        font-size: 16px;
+    }
+
+
+    /* navbar */
+    #navbar {padding: 20px 1px 20px 1px;}
+
+    #navbar a {font-size: 20px;}
+
+    /* sections */
+    #Home {height: 118vh;}
+
+    #About {height: 118vh;}
+
+    #About h1 {padding: 0px;}
+    
+    #About h3 {padding: 0px;}
+    
+    #About p {padding: 0px;}
+    
+    #About ul {padding: 0px;}
+
+    #Education {height: 118vh;}
+}
+
+@media screen and (min-width: 992px){
+    body {
+        background-color: #425664;
+        height: 100vh;
+        font-size: 20px;
+    }
+
+    /* navbar */
+    #navbar {padding: 20px;}
+
+    #navbar a {font-size: 25px;}
+
+    /* sections */
+    #Home {height: 100vh;}
+
+    #About {height: 100vh;}
+
+    #About h1 {padding: 0px 0px 20px 0px;}
+    
+    #About h3 {padding: 20px 0px 20px 0px;}
+    
+    #About p {padding: 0px;}
+    
+    #About ul {padding: 0px;}
+
+    #Education {height: 100vh;}
+}
+
